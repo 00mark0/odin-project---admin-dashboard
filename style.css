@@ -6,6 +6,8 @@
 
 body {
   font-family: "Shippori Antique B1", sans-serif;
+  background-color: #e2e8f0;
+  color: #000000;
 }
 
 .container {
@@ -14,29 +16,155 @@ body {
   grid-template-rows: 1fr 4fr 4fr 1fr;
   width: 100vw;
   height: 100vh;
+  row-gap: 10px;
 }
 
 .sidebar {
   grid-area: 1 / 1 / 5 / 1;
-  background-color: lightblue;
+  background-color: #1992d4;
+}
+
+.sidebar nav {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 2.5rem;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .header {
   grid-area: 1 / 2 / 2 / 4;
-  background-color: lightcoral;
+  box-shadow: 0 10px 10px -8px black;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.header .search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search .search-left {
+  display: flex;
+  gap: 20px;
+  width: 70%;
+  margin-left: 50px;
+}
+
+.search-left input {
+  width: 90%;
+  border: none;
+  padding: 10px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #e2e8f0;
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.search-left button {
+  border: none;
+  padding: 10px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.search .search-right {
+  display: flex;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+.search-right .notification-button {
+  border: none;
+  padding: 10px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.search-right .profile-pic {
+  border-radius: 50%;
+}
+
+.search-right .name {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+.search-right a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-left: 70px;
+}
+
+.actions .welcome {
+  display: flex;
+  gap: 20px;
+}
+
+.welcome .pfp {
+  border-radius: 50%;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+}
+
+.actions-buttons {
+  margin-right: 70px;
+  margin-top: 10px;
+}
+
+.actions-buttons button {
+  border: none;
+  padding: 10px 50px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #1992d4;
+  color: #ffffff;
+  flex-shrink: 1;
+  margin-right: 20px;
 }
 
 .project-cards {
   grid-area: 2 / 2 / 4 / 3;
-  background-color: khaki;
+  background-color: #e2e8f0;
 }
 
 .explore-cards {
   grid-area: 2 / 3 / 4 / 4;
-  background-color: lightgreen;
+  background-color: #e2e8f0;
 }
 
 .footer {
   grid-area: 4 / 2 / 5 / 4;
-  background-color: lightpink;
 }
