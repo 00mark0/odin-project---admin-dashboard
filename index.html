@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -111,6 +112,9 @@
           </div>
           <div class="actions">
             <div class="welcome">
+              <button id="sidebar-toggle" class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
               <div class="pfp">
                 <img
                   src="./img/goat128.png"
@@ -135,149 +139,251 @@
       <div class="project-cards">
         <p>Your Projects</p>
         <section id="project-cards">
-          <div class="card">
-            <div class="title-and-desc">
-              <h3>Project</h3>
-              <p>Lorem ipsum dolor</p>
+          <a href="#">
+            <div class="card">
+              <div class="title-and-desc">
+                <h3>PHP Cool</h3>
+                <p>
+                  Picture this: you're in the wild west of the internet, trying
+                  to wrangle data like a cowboy herding cattle. Suddenly, PHP
+                  rides in on its trusty steed, swooping in like a masked
+                  vigilante to save the day! With its lightning-fast processing
+                  and cowboy-level versatility, PHP is the Clint Eastwood of
+                  programming languages, effortlessly lassoing together web
+                  pages and databases faster than you can say 'yeehaw!' So
+                  saddle up, partner, because with PHP, you'll be riding into
+                  the sunset of web development success faster than you can say
+                  'howdy pardner!🤠🚀
+                </p>
+              </div>
+              <div class="card-actions">
+                <button type="button"><i class="fas fa-heart"></i></button>
+                <button type="button"><i class="fas fa-eye"></i></button>
+                <button type="button"><i class="fas fa-share-alt"></i></button>
+              </div>
             </div>
-            <div class="card-actions">
-              <button type="button"><i class="fas fa-heart"></i></button>
-              <button type="button"><i class="fas fa-eye"></i></button>
-              <button type="button"><i class="fas fa-share-alt"></i></button>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="title-and-desc">
+                <h3>JS Lame</h3>
+                <p>
+                  Picture this: you're navigating the treacherous terrain of web
+                  development, and just when you think you've got it all figured
+                  out, JavaScript saunters in like a clumsy circus clown with
+                  banana peels for shoes. Sure, it's got some fancy tricks up
+                  its sleeve, but half the time you're left scratching your head
+                  wondering why it decided to turn your elegant code into a
+                  chaotic jumble of callbacks and closures. JavaScript: the
+                  language that makes you feel like you're juggling flaming
+                  torches while riding a unicycle on a tightrope. So grab your
+                  popcorn and get ready for a wild ride through the land of
+                  'wait, why isn't this working?' with JavaScript!🤡🍌
+                </p>
+              </div>
+              <div class="card-actions">
+                <button type="button"><i class="fas fa-heart"></i></button>
+                <button type="button"><i class="fas fa-eye"></i></button>
+                <button type="button"><i class="fas fa-share-alt"></i></button>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="title-and-desc">
-              <h3>Project</h3>
-              <p>Lorem ipsum dolor</p>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="title-and-desc">
+                <h3>Rust Cool</h3>
+                <p>
+                  Imagine you're building a digital fortress to protect your
+                  code from marauding bugs and memory leaks. Suddenly, Rust
+                  bursts onto the scene like a knight in shining armor, wielding
+                  a mighty sword of speed and a shield of safety. With its
+                  fearless memory management and battle-tested error handling,
+                  Rust is the brave hero you never knew you needed. It's like
+                  having a trusty sidekick whispering in your ear, 'Fear not,
+                  for I shall protect thee from the dragons of segfaults and the
+                  trolls of race conditions!' So buckle up, because with Rust by
+                  your side, you'll be slaying bugs and conquering code like a
+                  medieval legend in the digital realm!🛡️⚔️
+                </p>
+              </div>
+              <div class="card-actions">
+                <button type="button"><i class="fas fa-heart"></i></button>
+                <button type="button"><i class="fas fa-eye"></i></button>
+                <button type="button"><i class="fas fa-share-alt"></i></button>
+              </div>
             </div>
-            <div class="card-actions">
-              <button type="button"><i class="fas fa-heart"></i></button>
-              <button type="button"><i class="fas fa-eye"></i></button>
-              <button type="button"><i class="fas fa-share-alt"></i></button>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="title-and-desc">
+                <h3>Node Lame</h3>
+                <p>
+                  Picture yourself in the bustling streets of the web
+                  development world, and along comes Node.js, strutting like a
+                  overconfident pigeon on a power line. Sure, it promises to be
+                  the messiah of server-side JavaScript, but half the time you
+                  feel like you're juggling fragile eggs while riding a unicycle
+                  on a tightrope. Node.js, where callbacks nest like Russian
+                  dolls and every async operation feels like waiting for a snail
+                  to finish a marathon. It's like trying to teach a goldfish to
+                  play fetch – entertaining, but ultimately leaving you
+                  wondering why you didn't just stick to something more
+                  reliable. So grab your popcorn and get ready for a
+                  rollercoaster ride through the land of 'wait, why isn't this
+                  asynchronous function working?' with Node.js!🐦🎢
+                </p>
+              </div>
+              <div class="card-actions">
+                <button type="button"><i class="fas fa-heart"></i></button>
+                <button type="button"><i class="fas fa-eye"></i></button>
+                <button type="button"><i class="fas fa-share-alt"></i></button>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="title-and-desc">
-              <h3>Project</h3>
-              <p>Lorem ipsum dolor</p>
+          </a>
+          <a href="#">
+            <div class="card">
+              <div class="title-and-desc">
+                <h3>Go Cool</h3>
+                <p>
+                  Imagine you're in the bustling metropolis of coding, and
+                  suddenly Go swoops in like a suave secret agent in a tailored
+                  suit, armed with a sleek arsenal of concurrency and
+                  simplicity. With its no-nonsense approach and lightning-fast
+                  execution, Go is the James Bond of programming languages –
+                  smooth, efficient, and always getting the job done with a wink
+                  and a smirk. It's like having a personal chauffeur who always
+                  knows the fastest route to your destination, except in this
+                  case, your destination is flawless code. So grab your
+                  sunglasses and get ready to ride into the sunset of
+                  programming success with Go, because when it comes to
+                  coolness, it's shaken, not stirred. 🕶️🔥
+                </p>
+              </div>
+              <div class="card-actions">
+                <button type="button"><i class="fas fa-heart"></i></button>
+                <button type="button"><i class="fas fa-eye"></i></button>
+                <button type="button"><i class="fas fa-share-alt"></i></button>
+              </div>
             </div>
-            <div class="card-actions">
-              <button type="button"><i class="fas fa-heart"></i></button>
-              <button type="button"><i class="fas fa-eye"></i></button>
-              <button type="button"><i class="fas fa-share-alt"></i></button>
+          </a>
+          <a href="">
+            <div class="card">
+              <div class="title-and-desc">
+                <h3>LLMs Lame</h3>
+                <p>
+                  Imagine diving into the vast ocean of language, seeking pearls
+                  of wisdom, only to find yourself tangled in a net of
+                  predictability spun by LLMs. Like a magician pulling the same
+                  rabbit out of its hat for the umpteenth time, LLMs often serve
+                  up responses that feel as fresh as yesterday's leftovers. It's
+                  like having a parrot as your conversation partner – sure, it
+                  can mimic speech, but where's the spontaneity, the creativity,
+                  the unexpected wit? So grab your popcorn and prepare for a
+                  journey through the land of 'predictable patterning' with
+                  LLMs, where even the most exciting discussions can feel as
+                  thrilling as watching paint dry!🎩🐰
+                </p>
+              </div>
+              <div class="card-actions">
+                <button type="button"><i class="fas fa-heart"></i></button>
+                <button type="button"><i class="fas fa-eye"></i></button>
+                <button type="button"><i class="fas fa-share-alt"></i></button>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="title-and-desc">
-              <h3>Project</h3>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="card-actions">
-              <button type="button"><i class="fas fa-heart"></i></button>
-              <button type="button"><i class="fas fa-eye"></i></button>
-              <button type="button"><i class="fas fa-share-alt"></i></button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="title-and-desc">
-              <h3>Project</h3>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="card-actions">
-              <button type="button"><i class="fas fa-heart"></i></button>
-              <button type="button"><i class="fas fa-eye"></i></button>
-              <button type="button"><i class="fas fa-share-alt"></i></button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="title-and-desc">
-              <h3>Project</h3>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="card-actions">
-              <button type="button"><i class="fas fa-heart"></i></button>
-              <button type="button"><i class="fas fa-eye"></i></button>
-              <button type="button"><i class="fas fa-share-alt"></i></button>
-            </div>
-          </div>
+          </a>
         </section>
       </div>
       <div class="explore-cards">
+        <p id="announcement-title">Announcements</p>
         <aside id="explore-cards">
-          <p>Announcements</p>
           <div class="announcement-card">
-            <div class="announcement-1">
-              <h4>Site Maintenance</h4>
+            <div class="announcement">
+              <h4><a href="#">Site Maintenance</a></h4>
               <p>
                 We will be performing maintenance on the site on 10/10/2121 from
                 12:00 AM to 6:00 AM. We apologize for any inconvenience.
               </p>
             </div>
-            <div class="announcement-2">
-              <h4>Community Share Day</h4>
+            <div class="announcement">
+              <h4><a href="#">Community Share Day</a></h4>
               <p>
                 Join us on 10/15/2121 for our community share day. Share your
                 projects and get feedback from the community.
               </p>
             </div>
-            <div class="announcement-3">
-              <h4>Updated Privacy Policy</h4>
+            <div class="announcement">
+              <h4><a href="#">Updated Privacy Policy</a></h4>
               <p>
                 We have updated our privacy policy. Please review it before
                 continuing to use our services.
               </p>
             </div>
           </div>
+          <p id="trending-title">Trending</p>
           <div class="trending-card">
-            <p>Trending</p>
             <div class="profile">
               <div class="profile-pic">
-                <img
-                  src="./img/astronaut.png"
-                  alt="astronaut avatar"
-                  width="56"
-                  height="56"
-                />
+                <a href="#">
+                  <img
+                    src="./img/astronaut.png"
+                    alt="astronaut avatar"
+                    width="56"
+                    height="56"
+                  />
+                </a>
               </div>
-              <h5>@galacticGiggler</h5>
-              <p>Far Out!</p>
+              <div class="profile-text">
+                <h5><a href="#">@galacticGiggler</a></h5>
+                <p>Far Out!</p>
+              </div>
             </div>
             <div class="profile">
               <div class="profile-pic">
-                <img
-                  src="./img/goat64.png"
-                  alt="goat avatar"
-                  width="56"
-                  height="56"
-                />
+                <a href="#">
+                  <img
+                    src="./img/goat64.png"
+                    alt="goat avatar"
+                    width="56"
+                    height="56"
+                  />
+                </a>
               </div>
-              <h5>@goat</h5>
-              <p>PHP Lambo</p>
+              <div class="profile-text">
+                <h5><a href="#">@goat</a></h5>
+                <p>PHP Lambo</p>
+              </div>
             </div>
             <div class="profile">
               <div class="profile-pic">
-                <img
-                  src="./img/hacker.png"
-                  alt="hacker avatar"
-                  width="56"
-                  height="56"
-                />
+                <a href="#">
+                  <img
+                    src="./img/hacker.png"
+                    alt="hacker avatar"
+                    width="56"
+                    height="56"
+                  />
+                </a>
               </div>
-              <h5>@noob</h5>
-              <p>Skill Issue</p>
+              <div class="profile-text">
+                <h5><a href="#">@noob</a></h5>
+                <p>Skill Issue</p>
+              </div>
             </div>
             <div class="profile">
               <div class="profile-pic">
-                <img
-                  src="./img/batman.png"
-                  alt="batman avatar"
-                  width="56"
-                  height="56"
-                />
+                <a href="#">
+                  <img
+                    src="./img/batman.png"
+                    alt="batman avatar"
+                    width="56"
+                    height="56"
+                  />
+                </a>
               </div>
-              <h5>@bats</h5>
-              <p>Bro Has a City to Save</p>
+              <div class="profile-text">
+                <h5><a href="#">@bats</a></h5>
+                <p>Bro Has a City to Save</p>
+              </div>
             </div>
           </div>
         </aside>
